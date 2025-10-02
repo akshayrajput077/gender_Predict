@@ -6,7 +6,7 @@ export default async function Home() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="bg-white rounded-2xl shadow-2xl sm:p-8 p-6 max-w-sm sm:w-full w-75 relative overflow-hidden">
             <h1 className="mb-3 sm:text-xl text-md text-center font-semibold">Gender Predict By Name</h1>
-            <form action="/about" method="GET" className="flex">
+            <form action="/gender" method="GET" className="flex">
               <input
                 type="text"
                 name="name"
