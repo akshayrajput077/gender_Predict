@@ -5,6 +5,12 @@ export default async function About(props) {
   const searchname = await props.searchParams;
   const name = searchname.name;
 
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve()
+    }, 2000);
+  })
+
   const res = await fetch(`https://api.genderize.io?name=${name}`);
   const data = await res.json();
 
